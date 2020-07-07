@@ -1,6 +1,6 @@
 {
     "name": "@didi/ibt-deploy-cli",
-    "version": "0.0.1",
+    "version": "0.0.16",
     "description": "A cli tool for web deploy.",
     "bin": {
         "deploy": "./bin/index.js"
