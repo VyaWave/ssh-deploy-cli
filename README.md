@@ -107,3 +107,7 @@ deploy prod
 部署流程和测试环境相同：
 
 ![线上环境部署](http://img-ys011.didistatic.com/static/nskyfe/deploy_readme_07.png)
+
+## 附录
+
+自动化部署文档：[http://wiki.intra.xiaojukeji.com/pages/viewpage.action?pageId=397210314](http://wiki.intra.xiaojukeji.com/pages/viewpage.action?pageId=397210314)
