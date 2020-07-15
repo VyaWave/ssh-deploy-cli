@@ -1,6 +1,6 @@
 {
   "name": "@didi/ibt-deploy-cli",
-  "version": "0.0.17",
+  "version": "1.0.0",
   "description": "测试/预发/线上自动化部署工具",
   "bin": {
     "deploy": "./bin/index.js"
