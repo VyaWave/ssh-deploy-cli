@@ -108,6 +108,13 @@ deploy prod
 
 ![线上环境部署](http://img-ys011.didistatic.com/static/nskyfe/deploy_readme_07.png)
 
+## 接入
+
+Project|Project Name|Project URL
+|:--|:--|:--
+|文案中心|i18n|http://i18n.xiaojukeji.com/search
+|CRM数据分析平台|ibddp|http://ibddp.intra.xiaojukeji.com/#/analyze/event
+
 ## 附录
 
 自动化部署文档：[http://wiki.intra.xiaojukeji.com/pages/viewpage.action?pageId=397210314](http://wiki.intra.xiaojukeji.com/pages/viewpage.action?pageId=397210314)
