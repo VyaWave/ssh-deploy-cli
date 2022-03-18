@@ -83,8 +83,6 @@ deploy --help
 ```
 查看部署命令
 
-![部署命令](http://img-ys011.didistatic.com/static/nskyfe/deploy_readme_04.png)
-
 ### 4.测试环境部署
 测试环境部署采用的时`dev`的配置
 ```
