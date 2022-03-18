@@ -1,5 +1,5 @@
 {
-  "name": "@didi/ibt-deploy-cli",
+  "name": "ssh-deploy-cli",
   "version": "1.0.1",
   "description": "测试/预发/线上自动化部署工具",
   "bin": {
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.xiaojukeji.com/ibt-fe/ibt-deploy-cli"
+    "url": "https://github.com/VyaWave/ssh-deploy-cli.git"
   },
   "dependencies": {
     "archiver": "^3.1.1",

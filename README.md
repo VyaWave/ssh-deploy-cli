@@ -1,5 +1,5 @@
-# @didi/ibt-deploy-cli
-IBT前端轻量化部署脚手架，支持测试、预发、线上等多环境自动化部署，支持多环境配置扩展，配置好后仅需一条命令即可完成整个部署流程。
+ssh-deploy-cli
+前端轻量化部署脚手架，支持测试、预发、线上等多环境自动化部署，支持多环境配置扩展，配置好后仅需一条命令即可完成整个部署流程。
 
 
 ## 前提条件
@@ -10,19 +10,16 @@ IBT前端轻量化部署脚手架，支持测试、预发、线上等多环境�
 注：建议使用nvm进行node版本控制（[https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)）。
 
 ## 安装
-全局安装 @didi/ibt-deploy-cli（建议不要安装在项目中）
+全局安装 ssh-deploy-cli（建议不要安装在项目中）
 ```
-npm i @didi/ibt-deploy-cli -g
+npm ssh-deploy-cli -g
 ```
-
-![安装@didi/ibt-deploy-cli](http://img-ys011.didistatic.com/static/nskyfe/deploy_readme_01.png)
 
 安装完成后，通过 `deploy -V` 或 `deploy --version` 查看当前安装版本，以确定是否安装成功。
 
 ```
 deploy -V ｜ deploy --version
 ```
-![查看版本号](http://img-ys011.didistatic.com/static/nskyfe/deploy_readme_02.png)
 
 如若出现以下提示，通过 nvm 升级 Node 到 9.0.0 版本以上即可。
 ```
@@ -37,8 +34,6 @@ Please upgrage your Node version.
 deploy init
 ```
 
-![初始化](http://img-ys011.didistatic.com/static/nskyfe/deploy_readme_03.png)
-
 ### 2.配置部署环境
 部署配置文件位于deploy文件夹下的`deploy.config.js`,
 一般包含`dev`（测试环境）、`pre`（预发环境）和`prod`（线上环境）三个配置，再有多余的环境配置形式与之类似，如果只有一个环境，则可以删除另一个多余的配置（比如只有`prod`线上环境，请删除`dev`测试环境配置）。
@@ -46,7 +41,7 @@ deploy init
 具体配置信息请参考配置文件注释：
 ```
 module.exports = {
-  projectName: 'i18n-platform',         // 项目名称
+  projectName: 'xxx',         // 项目名称
   dev: {                                // 测试环境
     name: '测试环境',
     script: "npm run build-dev",        // 测试环境打包脚本
@@ -97,7 +92,6 @@ deploy dev
 ```
 先有一个确认，确认后进入部署流程，完成6步操作后，部署成功！！！
 
-![测试环境部署](http://img-ys011.didistatic.com/static/nskyfe/deploy_readme_06.png)
 
 ### 5.线上环境部署
 线上环境部署采用的时`prod`的配置
@@ -106,15 +100,4 @@ deploy prod
 ```
 部署流程和测试环境相同：
 
-![线上环境部署](http://img-ys011.didistatic.com/static/nskyfe/deploy_readme_07.png)
-
 ## 接入
-
-Project|Project Name|Project URL
-|:--|:--|:--
-|文案中心|i18n|http://i18n.xiaojukeji.com/search
-|CRM数据分析平台|ibddp|http://ibddp.intra.xiaojukeji.com/#/analyze/event
-
-## 附录
-
-自动化部署文档：[http://wiki.intra.xiaojukeji.com/pages/viewpage.action?pageId=397210314](http://wiki.intra.xiaojukeji.com/pages/viewpage.action?pageId=397210314)
